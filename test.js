@@ -87,10 +87,10 @@ if (tipoDeSuscripcion === "Free") {
 
 let typeSub = ["Free", "Basic", "Expert", "ExpertPlus"]
 let mess = [
-  "Map Solo puedes tomar ciertos cursos",
-  "Map Puedes tomar casi todos los cursos de Platzi durante un mes",
-  "Map Puedes tomar casi todos los cursos de Platzi durante un año",
-  "Map Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+  "For Solo puedes tomar ciertos cursos",
+  "For Puedes tomar casi todos los cursos de Platzi durante un mes",
+  "For Puedes tomar casi todos los cursos de Platzi durante un año",
+  "For Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
 ]
 
 for (let i = 0; i < typeSub.length; i++ ) {
@@ -99,3 +99,26 @@ for (let i = 0; i < typeSub.length; i++ ) {
     console.log(mess[i])
   }
 }
+
+// Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+let num = 0;
+
+while(num < 5) {
+  num++
+  console.log( `El valor del numero es ${num}`); 
+}
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+let num2 = 10 
+while (num2 >= 2) {
+  num2--
+  console.log(`El valor de num2 es ${num2}`);
+}
+

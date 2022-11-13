@@ -58,29 +58,44 @@ function print(a, b, c) {
 
 
 // Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
-const tipoDeSuscripcion = "ExpertPlus";
+let tipoDeSuscripcion = "ExpertPlus";
 
 switch (tipoDeSuscripcion) {
-   case "Free":
-       console.log("Solo puedes tomar los cursos gratis");
-       break;
-   case "Basic":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-       break;
-   case "Expert":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-       break;
-   case "ExpertPlus":
-       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-       break;
+  case "Free":
+      console.log("switch Solo puedes tomar los cursos gratis");
+    break;
+  case "Basic":
+      console.log("switch Puedes tomar casi todos los cursos de Platzi durante un mes");
+    break;
+  case "Expert":
+      console.log("switch Puedes tomar casi todos los cursos de Platzi durante un año");
+    break;
+  case "ExpertPlus":
+      console.log("switch Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+    break;
 }
 
 if (tipoDeSuscripcion === "Free") {
-  console.log("Solo puedes tomar los cursos gratis");
+  console.log("If Solo puedes tomar los cursos gratis");
 } else if (tipoDeSuscripcion === "Basic") {
-  console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+  console.log("If Puedes tomar casi todos los cursos de Platzi durante un mes");
 } else if (tipoDeSuscripcion === "Expert"){
-  console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+  console.log("If Puedes tomar casi todos los cursos de Platzi durante un año");
 }else{
-  console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+  console.log("If Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+
+let typeSub = ["Free", "Basic", "Expert", "ExpertPlus"]
+let mess = [
+  "Map Solo puedes tomar ciertos cursos",
+  "Map Puedes tomar casi todos los cursos de Platzi durante un mes",
+  "Map Puedes tomar casi todos los cursos de Platzi durante un año",
+  "Map Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+]
+
+for (let i = 0; i < typeSub.length; i++ ) {
+  
+  if (tipoDeSuscripcion === typeSub[i] ){
+    console.log(mess[i])
+  }
 }

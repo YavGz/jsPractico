@@ -23,13 +23,41 @@
       margin: 0 auto;
       font-size: 2rem;
     }
+    
+    .ejercicio2 {
+      margin-top: 1rem;
+    }
+    .ejercicio2 input {
+      color: black;
+    }
+
+    button {
+      color: black;
+      padding: 0.5rem 1rem;
+    }
   
   </style>
 </head>
 <body style="background-color: #3e3e3e;">
   <main>
-    <p class="user"></p>
-    <p class="realCash"></p>
+    <div>
+      <h2>Ejercicio 1</h2>
+      <p class="user"></p>
+      <p class="realCash"></p>
+    </div>
+    <div class="ejercicio2">
+      <h2>Ejercicio 2</h2>
+      <form action="" class="form">
+        <label for="name">Como te llamas?</label>
+        <input type="text" id="name"><br>
+        <label for="lastname">Tus apellidos?</label>
+        <input type="text" id="lastname"><br>
+        <label for="nickname">Tu Nick Name</label>
+        <input type="text" id="nickname">
+      </form>
+      <button class="Run" type="button" onclick="print(inputName, inputLast,inputNick)">Run</button>
+    </div>
+
   </main> 
   <script src="./test.js"></script>
 </body>

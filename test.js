@@ -1,3 +1,7 @@
+// Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+// Nombre completo (nombre y apellido)
+// Dinero real (dinero ahorrado menos deudas)
+
 let name = "Javier"
 let secondName = "Gutierrez"
 let nickName = "Yav_Gz"
@@ -7,12 +11,53 @@ let older = true
 let cashSave = 2000
 let debts = 7500
 
-let input1 = document.querySelector(".user")
+let output = document.querySelector(".user")
+let output2 = document.querySelector(".realCash")
 
 
-
-function print () {
-  input1.innerHTML = `Usuario: ${name} ${secondName}`
+function printName () {
+  output.innerHTML = `Usuario: ${name} ${secondName}`
 }
 
-print();
+function printMoney() {
+  output2.innerHTML = `Dinero real: ${cashSave-debts}`
+}
+
+printName();
+
+printMoney();
+
+
+// Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+
+const nam2 = "";
+const lastname = "Castro Gallego";
+const completeName = nam2 + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+
+// crear variables para resultados
+let div2 = document.querySelector(".ejercicio2")
+let p = document.createElement("p")
+let inputName = document.querySelector("#name")
+let inputLast = document.querySelector("#lastname")
+let inputNick = document.querySelector("#nickname")
+
+
+
+// asignar resultado e imprimir
+function print(a, b, c) {
+  console.log(a.value)
+  p.innerHTML = `Hola, me llamo ${a.value} ${b.value}, pero me gusta que me digan ${c.value}`
+  div2.append(p)
+}
+
+
+
+
+
+// function printName2() {
+  // div2.appendChild(p)
+  
+// }

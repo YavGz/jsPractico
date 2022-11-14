@@ -122,3 +122,5 @@ while (num2 >= 2) {
   console.log(`El valor de num2 es ${num2}`);
 }
 
+
+// Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.

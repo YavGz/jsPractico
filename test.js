@@ -124,3 +124,56 @@ while (num2 >= 2) {
 
 
 // Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+function validar(){
+  let n = Number.parseInt(document.querySelector("#respuesta").value)
+
+  if (n === 4 ) {
+    alert("Correcto, SABES SUMAR!!! (o al menos contar con los dedos :3")
+  } else {
+    // n.value.innerHTML = ""
+    alert("Ups, tal vez debas regresar a la primaria 😅")
+  }
+  
+}
+
+
+//  ----------- listas ----------
+
+
+// 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+// 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+// 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+
+// --- 2
+let numbers = [1, 2 ,3 ,4 ,5 ,6 ,7]
+
+function fisrtelem (array) {
+  console.log(`El primer valor de tu array es ${array[0]}`)
+}
+fisrtelem(numbers);
+
+// ----- 3 
+function allEmens(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(`La posicion ${i} de tu array tiene el valor de: ${array[i]}`)
+  }
+}
+allEmens(numbers);
+
+let juanito = {
+  nombre: "Juanito",
+  apellido: "Perez",
+  edad: 17
+}
+
+function printObj(obj){
+  console.log(`
+  Nombre: ${obj.nombre}
+  Apellido: ${obj.apellido}
+  Edad: ${obj.edad}
+  `);
+}
+
+printObj(juanito);

@@ -27,11 +27,12 @@
     .ejercicio2 {
       margin-top: 1rem;
     }
-    .ejercicio2 input {
+    .ejercicio2 input, .ejercicio3 input {
       color: black;
     }
 
     button {
+      font-size: 0.8rem;
       color: black;
       padding: 0.5rem 1rem;
     }
@@ -56,6 +57,14 @@
         <input type="text" id="nickname">
       </form>
       <button class="Run" type="button" onclick="print(inputName, inputLast,inputNick)">Run</button>
+    </div>
+    <div class="ejercicio3">
+      <h3>Responde correctamente</h3>
+      <p>Cuanto es 2+2 ???</p>
+      <form action="">
+        <input type="number" id="respuesta">
+        <button type="button" onclick="validar()">Validar</button>
+      </form>
     </div>
 
   </main> 

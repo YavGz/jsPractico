@@ -177,3 +177,20 @@ function printObj(obj){
 }
 
 printObj(juanito);
+
+// Recrea el ejercisio de tipo de suscripciones usando solamente un if. 
+
+const typeSubs = {
+  free: "Solo pudes tomar los cursos gratis",
+  basic: "Puedes tomar casi todos los cursos durante un mes",
+  expert: "Puedes tomar casi todos los cursos durante un año",
+  expertduo: "Tu y otra persona pueden tomar TODOS los cursos de Platzi durante un año"
+}
+
+function conseguirTypeSub(suscripcion) {
+  if (typeSub[suscripcion]) {
+    console.log(typeSub[suscripcion])
+    return;
+  }
+  console.warn("Ese tipo de suscripcion no existe")
+}

@@ -3,9 +3,11 @@ const num2 = document.querySelector('#num2');
 const btn = document.querySelector('#calcBtn');
 const clrbtn = document.querySelector('#clrBtn');
 const p = document.querySelector('p')
+const form = document.querySelector('form')
 
 btn.addEventListener('click', calc)
 clrbtn.addEventListener('click', clear)
+// form.addEventListener('submit', events)
 
 function calc(){
   let resultado;
@@ -20,3 +22,9 @@ function clear() {
   num1.value = ''
   num2.value = ''
 }
+
+// AL reaccionar mediante iun eventListener por defecto nos manda el evento y sus propiedades, para examinalo podemos mandar la siguiente funcion
+// function events(event) {
+//   console.log({event});
+//   event.preventDefault()
+// }
